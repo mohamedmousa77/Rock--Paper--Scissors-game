@@ -15,26 +15,15 @@ body {
     align-items: center;
 }
 .header-container {
-    /* position: relative;
-    left: 200px;
-    top: 100px;
-    width: 800px;
-    height: 100px;
-    border-radius: 25px;
-    border: 3px solid  hsl(217, 16%, 45%);
-    display: flex;
-    gap: 50px;
-    justify-content: space-between; */
     width: 90%;
-    max-width: 800px;
-    margin-top: 60px;
+    max-width: 900px;
+    margin-top: 20px;
     padding: 20px;
     border-radius: 25px;
     border: 3px solid hsl(217, 16%, 45%);
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 .header-title p{
     margin-left: 20px;
@@ -50,15 +39,12 @@ body {
     background-color: white;
     border-radius: 15px;
     position: relative;
-    /* right: 20px;
-    top: 10px; */
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 .header-score h1 {
     position: relative;
-    /* bottom: 20px; */
     font-size: 25px;
     color: hsl(229, 25%, 31%);
 }
@@ -68,22 +54,11 @@ body {
 .footer {
     display: none;
 }
-/* h1 {
-    font-size: 22px;
-    font-weight: bold;
-    color: white;
-}
-
-p {
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-} */
 /*! Body style */
 .game-container {
     /* background-color: hsl(189, 59%, 53%); */
     position: absolute;
-    top: 250px;
+    top: 200px;
     left: 200px;
     height: 300px;
     width: 800px;
@@ -98,7 +73,8 @@ p {
     top: 50px;
     left: 60px; */
 }
-.user-choice-container, .computer-choice-container{
+.user-choice-container, .computer-choice-container, .paper-container, .scissors-container,.rock-container{
+    cursor: pointer;
     height: 150px;
     width: 150px;
     border-radius: 50%;
@@ -111,14 +87,13 @@ p {
     transition: all 0.3s ease;
 }
 .computer-choice-container{ 
-    /* right: 50px; */
     background-color:  hsl(349, 71%, 52%);
 }
 .user-choice-container{
     /* left: 50px; */
     background-color:  hsl(230, 89%, 62%);
 }
-.user-pick-container, .computer-pick-container {
+.user-pick-container, .computer-pick-container, .scissors-hand-container,.paper-hand-container, .rock-hand-container {
     background-color: white;
     height: 100px;
     width: 100px;
@@ -128,4 +103,46 @@ p {
     position: absolute;
     top: 25px;
     left: 25px;
+}
+.play-btn {
+    height: 50px;
+    width: 170px;
+    border-radius: 5px;
+    position: relative;
+    top: 60%;
+    color: hsl(229, 25%, 31%);
+    background-color: white;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.choose-hand-container {
+    display: none;
+    height: 400px;
+    width: 500px;
+    background-color: hsl(230, 89%, 65%);
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    border-radius: 10px;
+    z-index: 100;
+    position:absolute;
+    top: 20%;
+}
+.rock-container {
+    background-color:  hsl(349, 71%, 52%);
+    position:fixed;
+    top: 60%;
+    left: 43%;
+}
+.paper-container {
+    background-color:  hsl(230, 89%, 62%);
+    position:fixed;
+    top: 30%;
+    left: 33%;
+    
+}
+.scissors-container {
+    background-color:   hsl(39, 89%, 49%);
+    position:fixed;
+    left: 55%;
+    top: 30%;
 }

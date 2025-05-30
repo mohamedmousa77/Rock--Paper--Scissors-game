@@ -22,23 +22,44 @@
   <div class="game-container">
     <div class="user-side">
       <h1>You Picked</h1>
-      <div class="user-choice-container">
-        <div class="user-pick-container">
-          <img src="images/icon-paper.svg" alt="Paper icon" class="paper-icon">
+      <div class="user-choice-container" id="yourTurn">
+        <div class="user-pick-container" id="userPickedDiv">
+          <img id="userPickedImg" src="images/icon-paper.svg" alt="Paper icon" class="paper-icon">
         </div>
       </div>
+    </div>
+    <div class="start-game">
+      <button class="play-btn" id="playBtn">Play</button>
     </div>
     <div class="computer-side">
       <h1>House Picked</h1>
-      <div class="computer-choice-container">
+      <div class="computer-choice-container" id="houseDiv">
         <div class="computer-pick-container">
-          <img src="images/icon-rock.svg" alt="Paper icon" class="paper-icon">
+          <img id="housePickedImg" src="images/icon-rock.svg" alt="Paper icon" class="paper-icon">
         </div>
       </div>
     </div>
   </div>
+  <div class="choose-hand-container" id="chooseHandPopup">
+      <div class="rock-container" id="rockOption">
+        <div class="rock-hand-container">
+          <img src="images/icon-rock.svg" alt="Paper icon" class="paper-icon">
+        </div>
+      </div>
+      <div class="paper-container" id="paperOption">
+        <div class="paper-hand-container" >
+          <img src="images/icon-paper.svg" alt="Paper icon" class="paper-icon">
+        </div>
+      </div>
+      <div class="scissors-container" id="scissorsOption">
+        <div class="scissors-hand-container">
+          <img src="images/icon-scissors.svg" alt="Paper icon" class="paper-icon">
+        </div>
+      </div>
+    </div>
   <div class="footer">
     Coded by <a href="https://mohamedmousa.it">M Mousa</a>.
   </div>
+  <script src="main.js"></script>
 </body>
 </html>
