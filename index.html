@@ -3,35 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Rock, Paper, Scissors</title>
-
-  Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="./design/desktop-preview.jpg">
+  <link rel="stylesheet" href="stylees/stylee.css">
+  <title> Rock, Paper, Scissors Game</title>
 </head>
 <body>
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="header-container">
+    <div class="header-title">
+      <p>ROCK</p>
+      <p>PAPER</p>
+      <p>Scissors</p>
+    </div>
+    <div class="header-score">
+      <p>Score</p>
+      <h1>0</h1>
+    </div>
+  </div>
+  <div class="game-container">
+    <div class="user-side">
+      <h1>You Picked</h1>
+      <div class="user-choice-container">
+        <div class="user-pick-container">
+          <img src="images/icon-paper.svg" alt="Paper icon" class="paper-icon">
+        </div>
+      </div>
+    </div>
+    <div class="computer-side">
+      <h1>House Picked</h1>
+      <div class="computer-choice-container">
+        <div class="computer-pick-container">
+          <img src="images/icon-rock.svg" alt="Paper icon" class="paper-icon">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    Coded by <a href="https://mohamedmousa.it">M Mousa</a>.
   </div>
 </body>
 </html>
