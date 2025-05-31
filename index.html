@@ -12,28 +12,31 @@
     <div class="header-title">
       <p>ROCK</p>
       <p>PAPER</p>
-      <p>Scissors</p>
+      <p>SCISSORS</p>
     </div>
     <div class="header-score">
       <p>Score</p>
-      <h1>0</h1>
+      <h1 id="userScore">0</h1>
     </div>
   </div>
-  <div class="game-container">
+  <div class="game-container" id="gameContainer">
     <div class="user-side">
       <h1>You Picked</h1>
       <div class="user-choice-container" id="yourTurn">
+        <div class="circle-glow" id="userWinCircleGlow"></div>
         <div class="user-pick-container" id="userPickedDiv">
           <img id="userPickedImg" src="images/icon-paper.svg" alt="Paper icon" class="paper-icon">
         </div>
       </div>
     </div>
     <div class="start-game">
-      <button class="play-btn" id="playBtn">Play</button>
+      <p id="gameScore" class="game-score"></p>
+      <button class="play-btn" id="playBtn">Play again</button>
     </div>
     <div class="computer-side">
       <h1>House Picked</h1>
       <div class="computer-choice-container" id="houseDiv">
+        <div class="circle-glow" id="houseWinCircleGlow"></div>
         <div class="computer-pick-container">
           <img id="housePickedImg" src="images/icon-rock.svg" alt="Paper icon" class="paper-icon">
         </div>
@@ -41,22 +44,22 @@
     </div>
   </div>
   <div class="choose-hand-container" id="chooseHandPopup">
-      <div class="rock-container" id="rockOption">
-        <div class="rock-hand-container">
-          <img src="images/icon-rock.svg" alt="Paper icon" class="paper-icon">
-        </div>
-      </div>
-      <div class="paper-container" id="paperOption">
-        <div class="paper-hand-container" >
-          <img src="images/icon-paper.svg" alt="Paper icon" class="paper-icon">
-        </div>
-      </div>
-      <div class="scissors-container" id="scissorsOption">
-        <div class="scissors-hand-container">
-          <img src="images/icon-scissors.svg" alt="Paper icon" class="paper-icon">
-        </div>
+    <div class="rock-container" id="rockOption">
+      <div class="rock-hand-container">
+        <img src="images/icon-rock.svg" alt="Paper icon" class="paper-icon">
       </div>
     </div>
+    <div class="paper-container" id="paperOption">
+      <div class="paper-hand-container" >
+        <img src="images/icon-paper.svg" alt="Paper icon" class="paper-icon">
+      </div>
+    </div>
+    <div class="scissors-container" id="scissorsOption">
+      <div class="scissors-hand-container">
+        <img src="images/icon-scissors.svg" alt="Paper icon" class="paper-icon">
+      </div>
+    </div>
+  </div>
   <div class="footer">
     Coded by <a href="https://mohamedmousa.it">M Mousa</a>.
   </div>

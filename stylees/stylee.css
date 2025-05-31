@@ -26,12 +26,20 @@ body {
     align-items: center;
 }
 .header-title p{
-    margin-left: 20px;
+    /* margin-left: 20px;
     font-weight: bold;
     font-size: 15px;
     color: white;
     white-space: none;
-    word-spacing: 0;
+    word-spacing: 0; */
+    margin: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-weight: 700;
+    font-size: 28px;
+    color: white;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 .header-score {
     height: 70%;
@@ -69,10 +77,40 @@ body {
     color: white;
     font-size: 25px;
     font-weight: 800;
-    /* position: relative;
-    top: 50px;
-    left: 60px; */
 }
+.circle-glow {
+    display: flex;
+    position: absolute;
+    top: -25px;
+    left: -20px; 
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,0.05) 40%, transparent 70%);
+    box-shadow: 
+        0 0 0 40px rgba(255, 255, 255, 0.03),
+        0 0 0 80px rgba(255, 255, 255, 0.02),
+        0 0 0 120px rgba(255, 255, 255, 0.015);
+    z-index: 0;
+    animation: pulse 1.5s ease-out infinite;
+}
+
+/* Optional pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        opacity: 0.7;
+    }
+    70% {
+        transform: scale(1.05);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.2;
+    }
+}
+
 .user-choice-container, .computer-choice-container, .paper-container, .scissors-container,.rock-container{
     cursor: pointer;
     height: 150px;
@@ -109,18 +147,32 @@ body {
     width: 170px;
     border-radius: 5px;
     position: relative;
-    top: 60%;
+    top: 25%;
     color: hsl(229, 25%, 31%);
     background-color: white;
     font-size: 20px;
     font-weight: 400;
     cursor: pointer;
+    border: none;
+}
+.play-btn:hover {
+    color: red;
+}
+.game-score {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    top: 20%;
+}
+.game-container {
+    display: none;
 }
 .choose-hand-container {
-    display: none;
+    display: flex;
     height: 400px;
     width: 500px;
-    background-color: hsl(230, 89%, 65%);
+    background-color: hsl(237, 49%, 15%);
     box-shadow: 0 0 20px rgba(255,255,255,0.2);
     border-radius: 10px;
     z-index: 100;
