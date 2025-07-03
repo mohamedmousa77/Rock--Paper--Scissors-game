@@ -1,50 +1,49 @@
-# Rock, Paper, Scissors
+### ✊✋✌️ Rock Paper Scissors Game
+
+This interactive and responsive Rock Paper Scissors game lets users play against the computer in a beautifully designed interface. Built with HTML, CSS, JavaScript, and TypeScript, it includes score tracking, rule display, and optional persistence after refresh—making it a fun and engaging browser-based game for all screen sizes.
+
 
 ![Design preview for the Rock, Paper, Scissors coding challenge](./design/desktop-preview.jpg)
 
-## Welcome! 👋
+---
+### 🕹️ Features
 
-Thanks for checking out this front-end coding challenge.
+🔁 Play vs Computer: Randomized AI picks between Rock, Paper, and Scissors.
 
-Challenges help you improve your coding skills by building realistic projects.
+🧠 Score Memory: Scores persist after browser refresh using localStorage.
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+📱 Responsive Design: Works seamlessly across desktop, tablet, and mobile devices.
 
-## The challenge
+🎯 Clear Game Rules: Toggleable rules section for user guidance.
 
-Your challenge is to build out this Rock, Paper, Scissors game and get it looking as close to the design as possible.
+💡 Bonus Mode (Optional): Extendable to support Lizard and Spock for advanced play.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+---
+### 🛠️ Tech Stack
 
-Your users should be able to:
+| Technology | Description                                 |
+| ---------- | ------------------------------------------- |
+| HTML       | Page structure                              |
+| CSS        | Styling, responsiveness, animations         |
+| JavaScript | Game logic and DOM manipulation             |
+| TypeScript | Type-safe enhancements for game scalability |
 
-- View the optimal layout for the game depending on their device's screen size
-- Play Rock, Paper, Scissors against the computer
-- **Bonus**: Maintain the state of the score after refreshing the browser
-- **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer
+---
+### 📁 Project Structure
+```
+Rock--Paper--Scissors-game/
+├── index.html             # Game markup
+├── style.css              # Styling and layout
+├── script.js              # Game logic in JavaScript
+├── script.ts              # Optional: TypeScript logic
+├── assets/                # Icons, images, and screenshots
+└── README.md              # Project documentation
+```
+---
+🙋‍♂️ Author
 
-### Rules
+### Mohamed Mousa
 
-If the player wins, they gain 1 point. If the computer wins, the player loses one point.
+🔗 Portfolio: http://mohamedmousa.it
 
-#### Original
-
-- Paper beats Rock
-- Rock beats Scissors
-- Scissors beats Paper
-
-#### Bonus
-
-- Scissors beats Paper
-- Paper beats Rock
-- Rock beats Lizard
-- Lizard beats Spock
-- Spock beats Scissors
-- Scissors beats Lizard
-- Paper beats Spock
-- Rock beats Scissors
-- Lizard beats Paper
-- Spock beats Rock
-
-**Have fun building!** 🚀
-**Mohamed Mousa ❤️**
+🔗 LinkedIn: https://www.linkedin.com/in/mohamedmousa-/
